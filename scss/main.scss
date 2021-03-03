@@ -1,1 +1,17 @@
+@import "./fonts";
 
+body {
+  background: #FFFFFF;
+  color: #102746;
+  text-decoration: none;
+  font: {
+    family: "Lato";
+    weight: 400;
+    size: 16px;
+  }
+}
+
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
