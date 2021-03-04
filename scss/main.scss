@@ -62,7 +62,42 @@ body {
   }
 }
 .logo {
+  position: relative;
   &__img {
+  }
+  &::before {
+    content: "";
+    height: 0;
+    width: 4px;
+    background: #FFFFFF;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%) skew(-30deg);
+    box-shadow: -3px 0 5px rgba(0,0,0,0.5);
+  }
+  &::after {
+    content: "";
+    height: 0;
+    width: 4px;
+    background: #FFFFFF;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) skew(-30deg);
+    box-shadow: 3px 0 7px rgba(0,0,0,0.5);
+  }
+  &:hover::after {
+    height: 50%;
+    right: -15px;
+    transition: all 0.2s ease-in;
+  }
+  &:hover::before {
+    height: 50%;
+    left: -15px;
+    transition: all 0.2s ease-in;
   }
 }
 .nav-bar {
@@ -70,7 +105,45 @@ body {
   max-width: 490px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   &__link {
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      height: 2px;
+      width: 0;
+      background: #FFFFFF;
+      display: block;
+      position: absolute;
+      bottom: -7px;
+      right: -7px;
+      transform: skewX(-45deg);
+      box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    }
+    &::after {
+      content: "";
+      height: 0;
+      width: 2px;
+      background: #FFFFFF;
+      display: block;
+      position: absolute;
+      bottom: -6px;
+      right: -8px;
+      transform: skewY(-45deg);
+      box-shadow: 3px 0 7px rgba(0,0,0,0.5);
+    }
+    &:hover::after {
+      height: 125%;
+      transition: all 0.2s ease-in;
+    }
+    &:hover::before {
+      width: 125%;
+      transition: all 0.2s ease-in;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -106,36 +179,62 @@ body {
     max-width: 298px;
     margin-right: 60px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
     align-items: center;
     position: relative;
     width: 100%;
     max-width: 300px;
-    &::after {
-      content: "";
+  }
+  #whatDo:focus, #whatGo:focus, #whatDo:hover, #whatGo:hover {
+    & ~ .search-form__point::after {
+      width: 15px;
+      height: 15px;
+      opacity: 1;
+      transition: all 0.1s ease-in;
+    }
+  }
+  #whatDo:focus, #whatGo:focus, #whatDo:hover, #whatGo:hover {
+    & ~ .search-form__hover {
       width: 100%;
-      height: 2px;
-      display: block;
-      position: absolute;
-      bottom: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #FFFFFF;
+      transition: all 0.2s ease-in;
     }
   }
   &__point {
     width: 20px;
     height: 20px;
-    margin-right: 22px;
     display: block;
+    position: relative;
+    z-index: 0;
+    margin-right: 22px;
+    border-radius: 50%;
     border: 2px solid #FFFFFF;
     border-radius: 50%;
+    &::after {
+      content: "";
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      background: #FFFFFF;
+      opacity: 0;
+      border-radius: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
   }
   &__line {
     width: 100%;
     max-width: 226px;
+    display: block;
     background: none;
     border: none;
+    color: rgba(255,255,255, 1);
+    font: {
+      weight: 500;
+      size: 18px;
+    }
     &::placeholder {
       color: #FFFFFF;
       font: {
@@ -143,15 +242,41 @@ body {
         size: 18px;
       }
     }
+    &:focus::placeholder {
+      color: rgba(255,255,255, 0.5);
+      transition: all 0.2s ease-in;
+    }
+  }
+  &__hover {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #FFFFFF;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
   }
   &__btn {
     width: 172px;
     height: 58px;
     background: #1B7DFF;
     color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.3s ease-in;
     font: {
       weight: 500;
       size: 24px;
+    }
+    &:hover {
+      background: #FFFFFF;
+      color: #1B7DFF;
+      border-radius: 50px;
+    }
+    &:active {
+      box-shadow: inset 0 0px 7px 2.5px rgba(0,0,0,0.5);
+      transition: all .1s linear;
     }
   }
 }
