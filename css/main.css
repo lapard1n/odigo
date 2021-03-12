@@ -373,3 +373,23 @@ body {
 .articles__link:focus {
   outline: none;
 }
+
+.arrow-line {
+  width: 0px;
+  height: 2px;
+  display: block;
+  position: relative;
+  background: #006DFE;
+  transform: translateX(15px);
+  transition: all 0.3s ease-in;
+}
+.arrow-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-left: 8px solid #006DFE;
+}

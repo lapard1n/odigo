@@ -1,6 +1,6 @@
 @import "./fonts";
 
-// MAIN CONFIGS
+// BODY CONFIGS
 body {
   background: #FFFFFF;
   font: {
@@ -43,8 +43,7 @@ body {
   }
 }
 
-// HEADER
-// NAV MENU
+// HEADER > MENU
 .menu {
   width: 100%;
   max-width: 1060px;
@@ -57,6 +56,8 @@ body {
     size: 18px;
   }
 }
+
+// HEADER > MENU > LOGO
 .logo {
   position: relative;
   &::before {
@@ -94,6 +95,8 @@ body {
     left: -15px;
   }
 }
+
+// HEADER > MENU > NAV-BAR
 .nav-bar {
   width: 100%;
   max-width: 490px;
@@ -139,8 +142,7 @@ body {
   }
 }
 
-// HEADER
-// ABOUT US TITLE
+// HEADER > ABOUT-US
 .about-us {
   max-width: 620px;
   &__title {
@@ -160,8 +162,7 @@ body {
   }
 }
 
-// HEADER
-// SEARCH FORM
+// HEADER > SEARCH-FORM
 .search-form {
   display: flex;
   align-items: center;
@@ -287,8 +288,7 @@ body {
   }
 }
 
-// MAIN
-// BENEFITS > ARTICLES
+// MAIN > BENEFITS
 .benefits {
   width: 100%;
   height: 550px;
@@ -309,6 +309,8 @@ body {
     color: #102746;
   }
 }
+
+// MAIN > BENEFITS > ARTICLES
 .articles {
   margin: 0px 100px 90px;
   display: grid;
@@ -396,3 +398,36 @@ body {
     }
   }
 }
+
+// MAIN > BENEFITS > ARTICLES > ARROW-LINE
+.arrow-line {
+  width: 0px;
+  height: 2px;
+  display: block;
+  position: relative;
+  background: #006DFE;
+  transform: translateX(15px);
+  transition: all 0.3s ease-in;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-left: 8px solid #006DFE;
+  }
+}
+
+// MAIN
+
+// MAIN > LOCATIONS
+
+// MAIN > LOCATIONS > PLACES
+
+// MAIN > LOCATIONS > PLACES > HEADER
+
+// MAIN > LOCATIONS > PLACES > ITEM-CASE
+
+// MAIN > LOCATIONS > DETAILS
