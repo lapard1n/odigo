@@ -54,9 +54,9 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi enim, quisquam ducimus odit quod neque temporibus
               facilis.
             </div>
-            <a href="#" class="articles__link">
-              <h2 class="articles__link_title">LEARN MORE</h2>
-              <div class="arrow-line"></div>
+            <a class="hover-link articles__link" href="#">
+              <h2 class="hover-link__title">LEARN MORE</h2>
+              <div class="hover-link__line"></div>
             </a>
           </div>
           <div class="articles__item">
@@ -66,9 +66,9 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi enim, quisquam ducimus odit quod neque temporibus
               facilis.
             </div>
-            <a href="#" class="articles__link">
-              <h2 class="articles__link_title">LEARN MORE</h2>
-              <div class="arrow-line"></div>
+            <a class="hover-link articles__link" href="#">
+              <h2 class="hover-link__title">LEARN MORE</h2>
+              <div class="hover-link__line"></div>
             </a>
           </div>
           <div class="articles__item">
@@ -78,36 +78,41 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi enim, quisquam ducimus odit quod neque temporibus
               facilis.
             </div>
-            <a href="#" class="articles__link">
-              <h2 class="articles__link_title">LEARN MORE</h2>
-              <div class="arrow-line"></div>
+            <a class="hover-link articles__link" href="#">
+              <h2 class="hover-link__title">LEARN MORE</h2>
+              <div class="hover-link__line"></div>
             </a>
           </div>
         </div>
       </section>
-      <article class="locations">
+      <article class="place-list">
         <section class="places">
           <div class="places__header">
             <h1 class="places__title">Get inspired for your next trip</h1>
-            <a href="#" class="places__link">
-              <h2 class="places__link_title">VIEW ALL</h2>
-              <div class="arrow-line"></div>
+            <a class="hover-link places__link" href="#">
+              <h2 class="hover-link__title">VIEW ALL</h2>
+              <div class="hover-link__line"></div>
             </a>
           </div>
           <div class="places__item-case">
             <a class="places__item">
+              <img class="places__img" src="./img/places/fuji.jpg">
               <h2 class="plcaces__name">Mount Fuji</h2>
             </a>
             <a class="places__item">
+              <img class="places__img" src="./img/places/kyoto.jpg">
               <h2 class="plcaces__name">Kyoto</h2>
             </a>
             <a class="places__item">
+              <img class="places__img" src="./img/places/tokyo.jpg">
               <h2 class="plcaces__name">Tokyo</h2>
             </a>
             <a class="places__item">
+              <img class="places__img" src="./img/places/niigata.jpg">
               <h2 class="plcaces__name">Niigata</h2>
             </a>
             <a class="places__item">
+              <img class="places__img" src="./img/places/sapporo.jpg">
               <h2 class="plcaces__name">Sapporo</h2>
             </a>
           </div>
@@ -118,23 +123,189 @@
             <h1 class="details__title">Prefecture in Focus: Tottori</h1>
             <p class="details__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic cumque ratione provident pariatur odit quos, ab minima
               voluptas doloribus sit eaque optio officiis non. Recusandae doloribus fugit optio nihil aut?</p>
-            <a href="#" class="details__link">
-              <h2 class="details__link_title">VIEW PREFECTURE</h2>
-              <div class="arrow-line"></div>
+            <a class="hover-link details__link" href="#">
+              <h2 class="hover-link__title">VIEW PREFECTURE</h2>
+              <div class="hover-link__line"></div>
             </a>
           </div>
           <div class="details__about">
             <h1 class="details__title">Featured Neighborhood: Kyoto’s Arashiyama</h1>
             <p class="details__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic cumque ratione provident pariatur odit quos, ab minima voluptas doloribus sit eaque optio officiis non. Recusandae doloribus fugit optio nihil aut?</p>
-            <a href="#" class="details__link">
-              <h2 class="details__link_title">VIEW NEIGHBORHOOD</h2>
-              <div class="arrow-line"></div>
+            <a class="hover-link details__link" href="#">
+              <h2 class="hover-link__title">VIEW NEIGHBORHOOD</h2>
+              <div class="hover-link__line"></div>
             </a>
           </div>
           <img class="details__img" src="./img/places/stairs.jpg">
         </section>
+        <section class="visit">
+          <div class="visit__header">
+            <div class="visit__title">Today top places to visit</div>
+          </div>
+          <div class="visit__item-case">
+            <a class="visit__item" href="#">
+              <div class="visit-card">
+                <img class="visit-card__img" src="./img/cities/nagoya.jpg">
+                <div class="visit-card__sup-line">
+                  <h3 class="visit-card__name">NAGOYA</h3>
+                  <div class="visit-card__likes">
+                    <b class="visit-card__nmbr-likes">221</b>
+                    <i class="visit-card__likes-ico fas fa-heart"></i>
+                  </div>
+                  <div class="visit-card__cmmnt">
+                    <b class="visit-card__nmbr-cmmnt">50</b>
+                    <i class="visit-card__cmmnt-ico fas fa-comment-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="visit__item-txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae tenetur exercitationem totam quisquam.
+              </p>
+              <button class="visit__item-btn">SEE MORE</button>
+            </a>
+            <a class="visit__item" href="#">
+              <div class="visit-card">
+                <img class="visit-card__img" src="./img/cities/niigata.jpg">
+                <div class="visit-card__sup-line">
+                  <h3 class="visit-card__name">NIIGATA</h3>
+                  <div class="visit-card__likes">
+                    <b class="visit-card__nmbr-likes">221</b>
+                    <i class="visit-card__likes-ico fas fa-heart"></i>
+                  </div>
+                  <div class="visit-card__cmmnt">
+                    <b class="visit-card__nmbr-cmmnt">50</b>
+                    <i class="visit-card__cmmnt-ico fas fa-comment-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="visit__item-txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae
+                tenetur exercitationem totam quisquam.
+              </p>
+              <button class="visit__item-btn">SEE MORE</button>
+            </a>
+            <a class="visit__item" href="#">
+              <div class="visit-card">
+                <img class="visit-card__img" src="./img/cities/osaka.jpg">
+                <div class="visit-card__sup-line">
+                  <h3 class="visit-card__name">OSAKA</h3>
+                  <div class="visit-card__likes">
+                    <b class="visit-card__nmbr-likes">221</b>
+                    <i class="visit-card__likes-ico fas fa-heart"></i>
+                  </div>
+                  <div class="visit-card__cmmnt">
+                    <b class="visit-card__nmbr-cmmnt">50</b>
+                    <i class="visit-card__cmmnt-ico fas fa-comment-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="visit__item-txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae
+                tenetur exercitationem totam quisquam.
+              </p>
+              <button class="visit__item-btn">SEE MORE</button>
+            </a>
+            <a class="visit__item" href="#">
+              <div class="visit-card">
+                <img class="visit-card__img" src="./img/cities/saitama.jpg">
+                <div class="visit-card__sup-line">
+                  <h3 class="visit-card__name">SAITAMA</h3>
+                  <div class="visit-card__likes">
+                    <b class="visit-card__nmbr-likes">221</b>
+                    <i class="visit-card__likes-ico fas fa-heart"></i>
+                  </div>
+                  <div class="visit-card__cmmnt">
+                    <b class="visit-card__nmbr-cmmnt">50</b>
+                    <i class="visit-card__cmmnt-ico fas fa-comment-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="visit__item-txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae
+                tenetur exercitationem totam quisquam.
+              </p>
+              <button class="visit__item-btn">SEE MORE</button>
+            </a>
+            <a class="visit__item" href="#">
+              <div class="visit-card">
+                <img class="visit-card__img" src="./img/cities/ueno.jpg">
+                <div class="visit-card__sup-line">
+                  <h3 class="visit-card__name">UENO</h3>
+                  <div class="visit-card__likes">
+                    <b class="visit-card__nmbr-likes">221</b>
+                    <i class="visit-card__likes-ico fas fa-heart"></i>
+                  </div>
+                  <div class="visit-card__cmmnt">
+                    <b class="visit-card__nmbr-cmmnt">50</b>
+                    <i class="visit-card__cmmnt-ico fas fa-comment-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="visit__item-txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae
+                tenetur exercitationem totam quisquam.
+              </p>
+              <button class="visit__item-btn">SEE MORE</button>
+            </a>
+            <a class="visit__item" href="#">
+              <div class="visit-card">
+                <img class="visit-card__img" src="./img/cities/shibuya.jpg">
+                <div class="visit-card__sup-line">
+                  <h3 class="visit-card__name">SHIBUYA</h3>
+                  <div class="visit-card__likes">
+                    <b class="visit-card__nmbr-likes">221</b>
+                    <i class="visit-card__likes-ico fas fa-heart"></i>
+                  </div>
+                  <div class="visit-card__cmmnt">
+                    <b class="visit-card__nmbr-cmmnt">50</b>
+                    <i class="visit-card__cmmnt-ico fas fa-comment-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="visit__item-txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae
+                tenetur exercitationem totam quisquam.
+              </p>
+              <button class="visit__item-btn">SEE MORE</button>
+            </a>
+          </div>
+        </section>
       </article>
     </div>
+    <section class="props">
+      <img class="props__img" src="./img/main/bgFooter.jpg">
+      <i class="props__btn fas fa-play-circle"></i>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__case">
+      <div class="footer-logo">
+        <img class="footer-logo__img" src="./img/main/logoFooter.svg">
+      </div>
+      <section class="footer-list">
+        <div class="footer-list__column">
+          <a class="footer-list__link" href="#">Company</a>
+          <a class="footer-list__link" href="#">About</a>
+          <a class="footer-list__link" href="#">Team</a>
+          <a class="footer-list__link" href="#">Careers</a>
+          <a class="footer-list__link" href="#">Privacy Policy</a>
+        </div>
+        <div class="link-list__column">
+          <a class="footer-list__link" href="#">Locations</a>
+          <a class="footer-list__link" href="#">Tokyo</a>
+          <a class="footer-list__link" href="#">Kyoto</a>
+          <a class="footer-list__link" href="#">Osaka</a>
+          <a class="footer-list__link" href="#">Hokkaido</a>
+        </div>
+        <div class="link-list__column">
+          <a class="footer-list__link" href="#">Social Media</a>
+          <a class="footer-list__link" href="#">Facebook</a>
+          <a class="footer-list__link" href="#">Twitter</a>
+          <a class="footer-list__link" href="#">Instagram</a>
+          <a class="footer-list__link" href="#">Youtube</a>
+        </div>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>
