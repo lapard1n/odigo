@@ -19,6 +19,9 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
+body a:focus {
+  outline: none;
+}
 
 .header {
   width: 100%;
@@ -141,9 +144,6 @@ body {
 }
 .nav-bar__link:hover::before {
   width: 125%;
-}
-.nav-bar__link:focus {
-  outline: none;
 }
 
 .about-us {
@@ -323,9 +323,6 @@ body {
 .hover-link:hover::after {
   opacity: 1;
 }
-.hover-link:focus {
-  outline: none;
-}
 
 .benefits {
   width: 100%;
@@ -374,5 +371,99 @@ body {
   color: #000000;
 }
 .articles__link {
-  max-width: 180px;
+  width: 178px;
+}
+
+.places {
+  width: 100%;
+  margin-top: 100px;
+}
+.places__header {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.places__title {
+  position: relative;
+  color: #102746;
+  font-weight: 500;
+  font-size: 35px;
+}
+.places__title::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background: #006DFE;
+}
+.places__link {
+  width: 148px;
+}
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.gallery__item {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.gallery__item:nth-child(1) {
+  grid-area: 1/1/2/4;
+}
+.gallery__item:nth-child(2) {
+  grid-area: 1/4/2/7;
+}
+.gallery__item:nth-child(3) {
+  grid-area: 2/1/3/3;
+}
+.gallery__item:nth-child(4) {
+  grid-area: 2/3/3/5;
+}
+.gallery__item:nth-child(5) {
+  grid-area: 2/5/3/7;
+}
+.gallery__item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(0deg, #151824, rgba(255, 255, 255, 0));
+}
+.gallery__item:hover .gallery__img, .gallery__item:focus .gallery__img, .gallery__item:active .gallery__img {
+  transform: scale(1.1);
+}
+.gallery__item:hover .gallery__name, .gallery__item:focus .gallery__name, .gallery__item:active .gallery__name {
+  transform: translateX(-15px);
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in;
+}
+.gallery__name {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 2;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.details {
+  width: 100%;
+  margin-top: 100px;
 }
