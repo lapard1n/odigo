@@ -19,9 +19,6 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
-body a:focus {
-  outline: none;
-}
 
 .header {
   width: 100%;
@@ -242,26 +239,6 @@ body a:focus {
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in;
 }
-.search-form__btn {
-  width: 172px;
-  height: 58px;
-  background: #1B7DFF;
-  color: #FFFFFF;
-  box-shadow: none;
-  transition: all 0.3s ease-in;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 24px;
-}
-.search-form__btn:hover {
-  background: #FFFFFF;
-  color: #1B7DFF;
-  border-radius: 50px;
-}
-.search-form__btn:active {
-  box-shadow: inset 0 0px 7px 2.5px rgba(0, 0, 0, 0.5);
-  transition: all 0.1s linear;
-}
 
 .main {
   width: 100%;
@@ -273,6 +250,27 @@ body a:focus {
   height: auto;
   margin: 0 auto;
   position: relative;
+}
+
+.main-btn {
+  width: 172px;
+  height: 58px;
+  background: #1B7DFF;
+  color: #FFFFFF;
+  box-shadow: none;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 24px;
+}
+.main-btn:hover {
+  background: #FFFFFF;
+  color: #1B7DFF;
+  border-radius: 50px;
+}
+.main-btn:active {
+  box-shadow: inset 0 0px 7px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s linear;
 }
 
 .hover-link {
@@ -324,6 +322,24 @@ body a:focus {
   opacity: 1;
 }
 
+.main-title {
+  position: relative;
+  color: #102746;
+  display: inline;
+  font-weight: 500;
+  font-size: 35px;
+}
+.main-title::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background: #006DFE;
+}
+
 .benefits {
   width: 100%;
   height: 550px;
@@ -333,7 +349,7 @@ body a:focus {
   position: absolute;
   top: -200px;
   left: 0;
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
   background: #FFFFFF;
 }
 .benefits__title {
@@ -385,22 +401,6 @@ body a:focus {
   justify-content: space-between;
   align-items: center;
 }
-.places__title {
-  position: relative;
-  color: #102746;
-  font-weight: 500;
-  font-size: 35px;
-}
-.places__title::after {
-  content: "";
-  width: 50%;
-  height: 2px;
-  display: block;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  background: #006DFE;
-}
 .places__link {
   width: 148px;
 }
@@ -414,6 +414,7 @@ body a:focus {
 .gallery__item {
   overflow: hidden;
   position: relative;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .gallery__item:nth-child(1) {
@@ -466,4 +467,107 @@ body a:focus {
 .details {
   width: 100%;
   margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+}
+.details__img {
+  width: 100%;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+.details__about {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.details__title {
+  color: #102746;
+  font-weight: 500;
+  font-size: 30px;
+}
+.details__text {
+  color: #102746;
+  font-weight: 400;
+  font-size: 16px;
+}
+.details__link.first {
+  width: 220px;
+}
+.details__link.second {
+  width: 255px;
+}
+
+.visit {
+  width: 100%;
+  margin-top: 100px;
+}
+.visit__header {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.table__item {
+  width: 100%;
+}
+.table__item-txt {
+  margin: 30px 0 30px;
+  color: #102746;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.item-btn {
+  width: 120px;
+  height: 40px;
+  border: 2px solid #1B7DFF;
+  font-weight: 500;
+  font-size: 16px;
+}
+.item-btn:active {
+  box-shadow: inset 0 0px 3px 0.5px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s linear;
+}
+
+.table-card {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+.table-card__img {
+  width: 100%;
+}
+.table-card__sup-line {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+}
+.table-card__name {
+  font-weight: 500;
+  font-size: 18px;
+}
+.table-card__case {
+  display: flex;
+}
+.props {
+  width: 100%;
+  margin-top: 100px;
+}
+.props .props__img {
+  width: 100%;
 }
