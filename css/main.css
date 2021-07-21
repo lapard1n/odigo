@@ -41,13 +41,12 @@ body {
   left: 0;
   background: linear-gradient(0deg, rgba(53, 66, 103, 0.8), rgba(0, 0, 0, 0));
 }
-.header__case {
+.header-case {
   max-width: 1060px;
   height: 100%;
   margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
   position: relative;
   z-index: 1;
 }
@@ -55,7 +54,7 @@ body {
 .menu {
   width: 100%;
   max-width: 1060px;
-  margin-top: 50px;
+  margin: 50px 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,6 +144,10 @@ body {
 
 .about-us {
   max-width: 620px;
+  height: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 .about-us__title {
   margin-bottom: 22px;
@@ -159,9 +162,10 @@ body {
 }
 
 .search-form {
+  width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin: 50px 0 50px;
 }
 .search-form__item {
   width: 100%;
@@ -176,8 +180,8 @@ body {
   max-width: 300px;
 }
 .search-form #whatDo:focus ~ .search-form__point::after, .search-form #whatGo:focus ~ .search-form__point::after, .search-form #whatDo:hover ~ .search-form__point::after, .search-form #whatGo:hover ~ .search-form__point::after {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   opacity: 1;
 }
 .search-form #whatDo:focus ~ .search-form__hover, .search-form #whatGo:focus ~ .search-form__hover, .search-form #whatDo:hover ~ .search-form__hover, .search-form #whatGo:hover ~ .search-form__hover {
@@ -207,7 +211,7 @@ body {
   opacity: 0;
   border-radius: 50%;
   transform: translate3d(-50%, -50%, 0);
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 .search-form__line {
   width: 100%;
@@ -237,14 +241,14 @@ body {
   transform: translate(-50%);
   background: #FFFFFF;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .main {
   width: 100%;
   height: auto;
 }
-.main__case {
+.main-case {
   max-width: 1060px;
   padding-top: 350px;
   height: auto;
@@ -382,6 +386,7 @@ body {
   color: #000000;
 }
 .articles__text {
+  line-height: 24px;
   font-weight: 400;
   font-size: 16px;
   color: #000000;
@@ -445,8 +450,8 @@ body {
 .gallery__item:hover .gallery__img, .gallery__item:focus .gallery__img, .gallery__item:active .gallery__img {
   transform: scale(1.1);
 }
-.gallery__item:hover .gallery__name, .gallery__item:focus .gallery__name, .gallery__item:active .gallery__name {
-  transform: translateX(-15px);
+.gallery__item:hover .gallery__name::after, .gallery__item:focus .gallery__name::after, .gallery__item:active .gallery__name::after {
+  width: 100%;
 }
 .gallery__img {
   width: 100%;
@@ -462,6 +467,17 @@ body {
   transition: all 0.2s ease-in;
   font-weight: 700;
   font-size: 35px;
+}
+.gallery__name::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  z-index: 1;
+  background: #FFFFFF;
+  transition: all 0.2s ease-in;
 }
 
 .details {
@@ -487,6 +503,7 @@ body {
   font-size: 30px;
 }
 .details__text {
+  line-height: 24px;
   color: #102746;
   font-weight: 400;
   font-size: 16px;
@@ -515,8 +532,12 @@ body {
 .table__item {
   width: 100%;
 }
+.table__item:hover .table-card__img {
+  transform: scale(1.1);
+}
 .table__item-txt {
   margin: 30px 0 30px;
+  line-height: 24px;
   color: #102746;
   font-weight: 400;
   font-size: 16px;
@@ -535,6 +556,7 @@ body {
 }
 
 .table-card {
+  display: block;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -542,6 +564,7 @@ body {
 }
 .table-card__img {
   width: 100%;
+  transition: all 0.2s ease-in;
 }
 .table-card__sup-line {
   box-sizing: border-box;
@@ -562,8 +585,15 @@ body {
   font-size: 18px;
 }
 .table-card__case {
+  min-width: 105px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.table-card__case_in b {
+  margin-right: 5px;
+}
+
 .props {
   width: 100%;
   margin-top: 100px;

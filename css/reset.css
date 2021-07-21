@@ -6,7 +6,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-a:focus {
+a:focus, input:focus {
     outline: 0;
 }
 

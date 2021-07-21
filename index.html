@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>OdiGo</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__case">
+    <div class="header-case">
       <section class="menu">
           <a class="logo" href="index.html">
             <img class="logo__img" src="/img/main/logoHeader.svg">
@@ -43,7 +43,7 @@
     </div>
   </header>
   <main class="main">
-    <div class="main__case">
+    <div class="main-case">
       <section class="benefits">
         <div class="benefits__title">Benefits of Odigo</div>
         <div class="articles">
@@ -51,8 +51,7 @@
             <img class="articles__logo" src="./img/icon/temple.png">
             <div class="articles__title">Welcome to Odigo!</div>
             <div class="articles__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi enim, quisquam ducimus odit quod neque temporibus
-              facilis.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi enim, quisquam ducimus odit.
             </div>
             <a class="hover-link articles__link" href="index.html">
               <h2 class="hover-link__title">LEARN MORE</h2>
@@ -63,8 +62,7 @@
             <img class="articles__logo" src="./img/icon/personal.png">
             <div class="articles__title">Your Personal Japan Guide</div>
             <div class="articles__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi enim, quisquam ducimus odit quod neque temporibus
-              facilis.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi enim, quisquam ducimus odit.
             </div>
             <a class="hover-link articles__link" href="index.html">
               <h2 class="hover-link__title">LEARN MORE</h2>
@@ -75,8 +73,7 @@
             <img class="articles__logo" src="./img/icon/market.png">
             <div class="articles__title">Promoting Local Businesses</div>
             <div class="articles__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi enim, quisquam ducimus odit quod neque temporibus
-              facilis.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi enim, quisquam ducimus odit.
             </div>
             <a class="hover-link articles__link" href="index.html">
               <h2 class="hover-link__title">LEARN MORE</h2>
@@ -85,7 +82,7 @@
           </div>
         </div>
       </section>
-      <article class="place-list">
+      <article>
         <section class="places">
           <div class="places__header">
             <h1 class="main-title">Get inspired for your next trip</h1>
@@ -143,141 +140,126 @@
             <h1 class="main-title">Today top places to visit</h1>
           </div>
           <div class="table">
-            <a class="table__item" href="index.html">
-              <div class="table-card">
+            <div class="table__item">
+              <a class="table-card" href="index.html">
                 <img class="table-card__img" src="./img/cities/nagoya.jpg">
                 <div class="table-card__sup-line">
                   <h3 class="table-card__name">NAGOYA</h3>
                   <div class="table-card__case">
-                    <div class="table-card__likes">
-                      <b class="table-card__nmbr-likes">221</b>
-                      <i class="table-card__likes-ico fas fa-heart"></i>
+                    <div class=" table-card__case_in">
+                      <b>221</b><i class="fas fa-heart"></i>
                     </div>
-                    <div class="table-card__cmmnt">
-                      <b class="table-card__nmbr-cmmnt">50</b>
-                      <i class="table-card__cmmnt-ico fas fa-comment-alt"></i>
+                    <div class=" table-card__case_in">
+                      <b>50</b><i class="fas fa-comment-alt"></i>
                     </div>
                   </div>
                 </div>
-              </div>
-              <p class="table__item-txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae tenetur exercitationem totam quisquam.
-              </p>
-              <button class="main-btn item-btn">SEE MORE</button>
-            </a>
-            <a class="table__item" href="index.html">
-              <div class="table-card">
+              </a>
+              <p class="table__item-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates.</p>
+              <form action="index.html">
+                <button class="main-btn item-btn">SEE MORE</button>
+              </form>
+            </div>
+            <div class="table__item">
+              <a class="table-card" href="index.html">
                 <img class="table-card__img" src="./img/cities/niigata.jpg">
                 <div class="table-card__sup-line">
                   <h3 class="table-card__name">NIIGATA</h3>
                   <div class="table-card__case">
-                    <div class="table-card__likes">
-                      <b class="table-card__nmbr-likes">221</b>
-                      <i class="table-card__likes-ico fas fa-heart"></i>
+                    <div class=" table-card__case_in">
+                      <b>221</b><i class="fas fa-heart"></i>
                     </div>
-                    <div class="table-card__cmmnt">
-                      <b class="table-card__nmbr-cmmnt">50</b>
-                      <i class="table-card__cmmnt-ico fas fa-comment-alt"></i>
+                    <div class=" table-card__case_in">
+                      <b>50</b><i class="fas fa-comment-alt"></i>
                     </div>
                   </div>
                 </div>
-              </div>
-              <p class="table__item-txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae
-                tenetur exercitationem totam quisquam.
-              </p>
-              <button class="main-btn item-btn">SEE MORE</button>
-            </a>
-            <a class="table__item" href="index.html">
-              <div class="table-card">
+              </a>
+              <p class="table__item-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates.</p>
+              <form action="index.html">
+                <button class="main-btn item-btn">SEE MORE</button>
+              </form>
+            </div>
+            <div class="table__item">
+              <a class="table-card" href="index.html">
                 <img class="table-card__img" src="./img/cities/osaka.jpg">
                 <div class="table-card__sup-line">
                   <h3 class="table-card__name">OSAKA</h3>
                   <div class="table-card__case">
-                    <div class="table-card__likes">
-                      <b class="table-card__nmbr-likes">221</b>
-                      <i class="table-card__likes-ico fas fa-heart"></i>
+                    <div class=" table-card__case_in">
+                      <b>221</b><i class="fas fa-heart"></i>
                     </div>
-                    <div class="table-card__cmmnt">
-                      <b class="table-card__nmbr-cmmnt">50</b>
-                      <i class="table-card__cmmnt-ico fas fa-comment-alt"></i>
+                    <div class=" table-card__case_in">
+                      <b>50</b><i class="fas fa-comment-alt"></i>
                     </div>
                   </div>
                 </div>
-              </div>
-              <p class="table__item-txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae
-                tenetur exercitationem totam quisquam.
-              </p>
-              <button class="main-btn item-btn">SEE MORE</button>
-            </a>
-            <a class="table__item" href="index.html">
-              <div class="table-card">
+              </a>
+              <p class="table__item-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates.</p>
+              <form action="index.html">
+                <button class="main-btn item-btn">SEE MORE</button>
+              </form>
+            </div>
+            <div class="table__item">
+              <a class="table-card" href="index.html">
                 <img class="table-card__img" src="./img/cities/saitama.jpg">
                 <div class="table-card__sup-line">
                   <h3 class="table-card__name">SAITAMA</h3>
                   <div class="table-card__case">
-                    <div class="table-card__likes">
-                      <b class="table-card__nmbr-likes">221</b>
-                      <i class="table-card__likes-ico fas fa-heart"></i>
+                    <div class=" table-card__case_in">
+                      <b>221</b><i class="fas fa-heart"></i>
                     </div>
-                    <div class="table-card__cmmnt">
-                      <b class="table-card__nmbr-cmmnt">50</b>
-                      <i class="table-card__cmmnt-ico fas fa-comment-alt"></i>
+                    <div class=" table-card__case_in">
+                      <b>50</b><i class="fas fa-comment-alt"></i>
                     </div>
                   </div>
                 </div>
-              </div>
-              <p class="table__item-txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae
-                tenetur exercitationem totam quisquam.
-              </p>
-              <button class="main-btn item-btn">SEE MORE</button>
-            </a>
-            <a class="table__item" href="index.html">
-              <div class="table-card">
+              </a>
+              <p class="table__item-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates.</p>
+              <form action="index.html">
+                <button class="main-btn item-btn">SEE MORE</button>
+              </form>
+            </div>
+            <div class="table__item">
+              <a class="table-card" href="index.html">
                 <img class="table-card__img" src="./img/cities/ueno.jpg">
                 <div class="table-card__sup-line">
                   <h3 class="table-card__name">UENO</h3>
                   <div class="table-card__case">
-                    <div class="table-card__likes">
-                      <b class="table-card__nmbr-likes">221</b>
-                      <i class="table-card__likes-ico fas fa-heart"></i>
+                    <div class=" table-card__case_in">
+                      <b>221</b><i class="fas fa-heart"></i>
                     </div>
-                    <div class="table-card__cmmnt">
-                      <b class="table-card__nmbr-cmmnt">50</b>
-                      <i class="table-card__cmmnt-ico fas fa-comment-alt"></i>
+                    <div class=" table-card__case_in">
+                      <b>50</b><i class="fas fa-comment-alt"></i>
                     </div>
                   </div>
                 </div>
-              </div>
-              <p class="table__item-txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae
-                tenetur exercitationem totam quisquam.
-              </p>
-              <button class="main-btn item-btn">SEE MORE</button>
-            </a>
-            <a class="table__item" href="index.html">
-              <div class="table-card">
+              </a>
+              <p class="table__item-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates.</p>
+              <form action="index.html">
+                <button class="main-btn item-btn">SEE MORE</button>
+              </form>
+            </div>
+            <div class="table__item">
+              <a class="table-card" href="index.html">
                 <img class="table-card__img" src="./img/cities/shibuya.jpg">
                 <div class="table-card__sup-line">
                   <h3 class="table-card__name">SHIBUYA</h3>
-                  <div class="table-card__likes">
-                    <b class="table-card__nmbr-likes">221</b>
-                    <i class="table-card__likes-ico fas fa-heart"></i>
-                  </div>
-                  <div class="table-card__cmmnt">
-                    <b class="table-card__nmbr-cmmnt">50</b>
-                    <i class="table-card__cmmnt-ico fas fa-comment-alt"></i>
+                  <div class="table-card__case">
+                    <div class=" table-card__case_in">
+                      <b>221</b><i class="fas fa-heart"></i>
+                    </div>
+                    <div class=" table-card__case_in">
+                      <b>50</b><i class="fas fa-comment-alt"></i>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <p class="table__item-txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates dolorum ex quis cum beatae
-                tenetur exercitationem totam quisquam.
-              </p>
-              <button class="main-btn item-btn">SEE MORE</button>
-            </a>
+              </a>
+              <p class="table__item-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque cumque voluptates.</p>
+              <form action="index.html">
+                <button class="main-btn item-btn">SEE MORE</button>
+              </form>
+            </div>
           </div>
         </section>
       </article>
@@ -288,7 +270,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__case">
+    <div class="footer-case">
       <div class="footer-logo">
         <img class="footer-logo__img" src="./img/main/logoFooter.svg">
       </div>
