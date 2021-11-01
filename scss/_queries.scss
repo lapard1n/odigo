@@ -1,0 +1,97 @@
+// Large devices (desktops, less than 1100px)
+@media (max-width: 1099.98px) {
+/* HEADER */
+.header-case {
+  max-width: none;
+}
+.menu {
+  flex-flow: column nowrap;
+  .logo {
+    margin-bottom: 25px;
+  }
+  .nav-bar {
+    max-width: 60%;
+  }
+}
+
+.about-us {
+  height: 55%;
+}
+
+// .search-form {
+//   height: 58px;
+//   flex-flow: column;
+//   align-items: flex-end;
+//   justify-content: space-between;
+//   position: relative;
+//   &__item {
+//     max-width: 475px;
+//     margin-right: 0px;
+//   }
+//   &__btn {
+//     position: absolute;
+//     top: 50%;
+//     right: 0;
+//     transform: translate3d(0, -50%, 0);
+//   }
+// }
+
+.search-form {
+  height: 111px;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  &__item {
+    margin-right: 0px;
+    &:nth-child(1) {
+      margin-right: 12.5px;
+    }
+    &:nth-child(2){
+      margin-left: 12.5px;
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate3d(-50%, -100%, 0);
+  }
+}
+
+/* MAIN */
+.main-case {
+  max-width: none;
+}
+.benefits{
+  max-width: none;
+}
+
+/* FOOTER */
+.footer-case {
+  max-width: none;
+}
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1000px) {
+// ...
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+// ...
+}

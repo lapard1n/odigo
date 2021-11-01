@@ -1,6 +1,6 @@
 @import "./fonts";
 
-// BODY CONFIGS
+/* BODY CONFIGS */
 body {
   background: #FFFFFF;
   font: {
@@ -10,7 +10,7 @@ body {
   }
 }
 
-// HEADER
+/* HEADER */
 .header {
   width: 100%;
   height: 100vh;
@@ -35,6 +35,7 @@ body {
     max-width: 1060px;
     height: 100%;
     margin: 0 auto;
+    padding: 0 50px 0;
     display: flex;
     flex-flow: column wrap;
     position: relative;
@@ -42,7 +43,7 @@ body {
   }
 }
 
-// HEADER > MENU
+/* HEADER > MENU */
 .menu {
   width: 100%;
   max-width: 1060px;
@@ -56,9 +57,11 @@ body {
   }
 }
 
-// HEADER > MENU > LOGO
+/* HEADER > MENU > LOGO */
 .logo {
   position: relative;
+
+// EFFECT:
   &::before {
     content: "";
     height: 0;
@@ -95,13 +98,15 @@ body {
   }
 }
 
-// HEADER > MENU > NAV-BAR
+/* HEADER > MENU > NAV-BAR */
 .nav-bar {
   width: 100%;
   max-width: 490px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+// EFFECT:
   &__link {
     position: relative;
     cursor: pointer;
@@ -138,7 +143,7 @@ body {
   }
 }
 
-// HEADER > ABOUT-US
+/* HEADER > ABOUT-US */
 .about-us {
   max-width: 620px;
   height: 60%;
@@ -162,7 +167,7 @@ body {
   }
 }
 
-// HEADER > SEARCH-FORM
+/* HEADER > SEARCH-FORM */
 .search-form {
   width: 100%;
   display: flex;
@@ -177,8 +182,6 @@ body {
     flex-direction: row-reverse;
     align-items: center;
     position: relative;
-    width: 100%;
-    max-width: 300px;
   }
   #whatDo:focus, #whatGo:focus, #whatDo:hover, #whatGo:hover {
     & ~ .search-form__point::after {
@@ -252,20 +255,7 @@ body {
   }
 }
 
-// MAIN
-.main {
-  width: 100%;
-  height: auto;
-  &-case {
-    max-width: 1060px;
-    padding-top: 350px;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-
-// GLOBAL MAIN SELECTORS
+/* GLOBAL MAIN SELECTORS */
 .main-btn {
   width: 172px;
   height: 58px;
@@ -362,20 +352,42 @@ body {
   }
 }
 
-// MAIN > BENEFITS
+/* MAIN */
+.main {
+  width: 100%;
+  position: relative;
+  &-case {
+    max-width: 1060px;
+    padding: 350px 50px 0;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+/* MAIN > BENEFITS */
 .benefits {
   width: 100%;
+  max-width: 1060px;
   height: 550px;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  justify-content: center;
   position: absolute;
   top: -200px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
   background: #FFFFFF;
+  &-case {
+    width: 100%;
+    max-width: 860px;
+    height: 100%;
+    margin: 0 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
   &__title {
-    margin: 90px 0px 0px 100px;
+    margin-top: 90px;
     font: {
       weight: 500;
       size: 35px;
@@ -384,9 +396,10 @@ body {
   }
 }
 
-// MAIN > BENEFITS > ARTICLES
+/* MAIN > BENEFITS > ARTICLES */
 .articles {
-  margin: 0px 100px 90px;
+  width: 100%;
+  margin-bottom: 90px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;
@@ -396,6 +409,9 @@ body {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    &:nth-child(2) {
+      margin: 0 25px;
+    }
   }
   &__logo {
     width: 50px;
@@ -421,7 +437,7 @@ body {
   }
 }
 
-// MAIN > PLACES
+/* MAIN > PLACES */
 .places {
   width: 100%;
   margin-top: 100px;
@@ -437,7 +453,7 @@ body {
   }
 }
 
-// MAIN > PLACES > ITEM-CASE
+/* MAIN > PLACES > ITEM-CASE */
 .gallery {
   width: 100%;
   display: grid;
@@ -512,7 +528,7 @@ body {
   }
 }
 
-// MAIN > DETAILS
+/* MAIN > DETAILS */
 .details {
   width: 100%;
   margin-top: 100px;
@@ -554,7 +570,7 @@ body {
   }
 }
 
-// MIAN > VISIT
+/* MIAN > VISIT */
 .visit {
   width: 100%;
   margin-top: 100px;
@@ -564,7 +580,7 @@ body {
   }
 }
 
-// MIAN > VISIT > TABLE
+/* MIAN > VISIT > TABLE */
 .table {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -601,7 +617,7 @@ body {
   }
 }
 
-// MIAN > VISIT > TABLE > TABLE-CARD
+/* MIAN > VISIT > TABLE > TABLE-CARD */
 .table-card {
   display: block;
   width: 100%;
@@ -643,7 +659,7 @@ body {
   }
 }
 
-// MAIN > PROPS
+/* MAIN > PROPS */
 .props {
 width: 100%;
 display: block;
@@ -685,7 +701,7 @@ margin-top: 100px;
   }
 }
 
-// FOOTER
+/* FOOTER */
 .footer {
   width: 100%;
   height: 370px;
@@ -694,6 +710,7 @@ margin-top: 100px;
     max-width: 1060px;
     height: 100%;
     margin: 0 auto;
+    padding: 0 50px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -749,3 +766,5 @@ margin-top: 100px;
     }
   }
 }
+
+@import '_queries.scss';

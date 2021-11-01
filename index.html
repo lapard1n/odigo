@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>OdiGo</title>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.min.css">
   <link rel="shortcut icon" href="./img/icon/temple.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/eeacb9ff0f.js" crossorigin="anonymous"></script>
 </head>
@@ -13,15 +13,15 @@
   <header class="header">
     <div class="header-case">
       <section class="menu">
-          <a class="logo" href="index.html">
-            <img class="logo__img" src="/img/main/logoHeader.svg">
-          </a>
-          <nav class="nav-bar">
-            <a class="nav-bar__link" href="index.html">Articles</a>
-            <a class="nav-bar__link" href="index.html">Locations</a>
-            <a class="nav-bar__link" href="index.html">Videos</a>
-            <a class="nav-bar__link" href="index.html">Sign in</a>
-          </nav>
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="/img/main/logoHeader.svg">
+        </a>
+        <nav class="nav-bar">
+          <a class="nav-bar__link" href="index.html">Articles</a>
+          <a class="nav-bar__link" href="index.html">Locations</a>
+          <a class="nav-bar__link" href="index.html">Videos</a>
+          <a class="nav-bar__link" href="index.html">Sign in</a>
+        </nav>
       </section>
       <section class="about-us">
         <div class="about-us__title">Discover Amazing places in Japan</div>
@@ -38,13 +38,15 @@
           <label class="search-form__point" for="whatGo"></label>
           <label class="search-form__hover" for="whatGo"></label>
         </div>
-        <button class="main-btn" type="submit" form="search-form">SEARCH</button>
+        <div class="search-form__btn">
+          <button class="main-btn" type="submit" form="search-form">SEARCH</button>
+        </div>
       </form>
     </div>
   </header>
   <main class="main">
-    <div class="main-case">
-      <section class="benefits">
+    <section class="benefits">
+      <div class="benefits-case">
         <div class="benefits__title">Benefits of Odigo</div>
         <div class="articles">
           <div class="articles__item">
@@ -81,7 +83,9 @@
             </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <div class="main-case">
       <article>
         <section class="places">
           <div class="places__header">
