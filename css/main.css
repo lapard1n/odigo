@@ -68,7 +68,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 /* MENU > LOGO */
@@ -172,15 +172,15 @@ body {
 
 .about-us__title {
   margin-bottom: 22px;
-  line-height: 60px;
+  line-height: 1.2;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 3.125em;
 }
 
 .about-us__text {
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 /* HEADER > SEARCH-FORM */
@@ -247,15 +247,13 @@ body {
   background: none;
   border: none;
   color: white;
-  font-weight: 500;
-  font-size: 18px;
 }
 
 .search-form__line::placeholder {
   color: #FFFFFF;
   transition: all 0.2s ease-in;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .search-form__line:focus::placeholder {
@@ -284,7 +282,7 @@ body {
   transition: all 0.3s ease-in;
   cursor: pointer;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 .main-btn:hover {
@@ -320,7 +318,7 @@ body {
 .hover-link__title {
   color: #006DFE;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .hover-link__line {
@@ -358,7 +356,7 @@ body {
   color: #102746;
   display: inline;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 2.1875em;
 }
 
 .main-title::after {
@@ -414,7 +412,7 @@ body {
 .benefits__title {
   margin-top: 90px;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 2.1875em;
   color: #102746;
 }
 
@@ -446,14 +444,14 @@ body {
 
 .articles__title {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125em;
   color: #000000;
 }
 
 .articles__text {
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   color: #000000;
 }
 
@@ -547,7 +545,7 @@ body {
   color: #FFFFFF;
   transition: all 0.2s ease-in;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 2.1875em;
 }
 
 .gallery__name::after {
@@ -586,14 +584,14 @@ body {
 .details__title {
   color: #102746;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.875em;
 }
 
 .details__text {
-  line-height: 24px;
+  line-height: 1.5;
   color: #102746;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .details__link.first {
@@ -632,10 +630,10 @@ body {
 
 .table__item-txt {
   margin: 30px 0 30px;
-  line-height: 24px;
+  line-height: 1.5;
   color: #102746;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .item-btn {
@@ -643,7 +641,7 @@ body {
   height: 40px;
   border: 2px solid #1B7DFF;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .item-btn:active {
@@ -682,7 +680,7 @@ body {
 
 .table-card__name {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .table-card__case {
@@ -727,7 +725,7 @@ body {
   left: 50%;
   z-index: 2;
   transform: translate3d(-50%, -50%, 0);
-  font-size: 125px;
+  font-size: 7.8125em;
   color: #FFFFFF;
   cursor: pointer;
   transition: all 0.05s linear;
@@ -739,7 +737,7 @@ body {
 }
 
 .props .props__btn:active {
-  font-size: 120px;
+  font-size: 7.5em;
 }
 
 /* FOOTER */
@@ -787,10 +785,10 @@ body {
 
 .footer-list__link {
   position: relative;
-  line-height: 24px;
+  line-height: 1.5;
   color: #FFFFFF;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   transition: all 0.1s linear;
 }
 
@@ -815,11 +813,13 @@ body {
   width: 100%;
 }
 
+/* SIZE FOR SMALL MONITORS */
 @media (max-width: 1099.98px) {
   /* HEADER */
   .header-case {
     max-width: none;
   }
+  /* HEADER > MENU */
   .menu {
     flex-flow: column nowrap;
   }
@@ -829,6 +829,7 @@ body {
   .menu .nav-bar {
     max-width: 60%;
   }
+  /* MENU > LOGO */
   .header-logo, .footer-logo {
     width: auto;
     height: 58px;
@@ -837,6 +838,7 @@ body {
     width: 100%;
     height: 100%;
   }
+  /* HEADER > SEARCH-FORM */
   .search-form {
     height: 111px;
     justify-content: center;
@@ -862,6 +864,7 @@ body {
   .main-case {
     max-width: none;
   }
+  /* MAIN > BENEFITS */
   .benefits {
     max-width: none;
   }
@@ -879,4 +882,42 @@ body {
     margin-top: 50px;
   }
 }
+
+/* SIZE FOR TABLETS */
+@media (max-width: 991.98px) {
+  /* MAIN > DETAILS */
+  .details__about {
+    justify-content: space-between;
+  }
+  /* MIAN > VISIT */
+  .table {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 75px 0;
+  }
+  .table__item {
+    width: 75%;
+    display: grid;
+  }
+  .table__item:nth-child(even) {
+    justify-items: flex-end;
+  }
+}
+
+/* INTERMEDIATE CORRECTION POINT */
+@media (max-width: 879.98px) {
+  body {
+    font-size: 14px;
+  }
+  body .header, body .footer {
+    font-size: 16px;
+  }
+  /* MAIN > DETAILS */
+  .details {
+    gap: 30px;
+  }
+}
+
+/* SIZE FOR MEDIUM PHONE */
+/* SIZE FOR SMALL PHONE */
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,10 @@
-// SIZE FOR SMALL MONITORS
+/* SIZE FOR SMALL MONITORS */
 @media (max-width: 1099.98px) {
 /* HEADER */
   .header-case {
     max-width: none;
   }
+/* HEADER > MENU */
   .menu {
     flex-flow: column nowrap;
     .header-logo {
@@ -13,6 +14,7 @@
       max-width: 60%;
     }
   }
+/* MENU > LOGO */
   .header-logo, .footer-logo {
     width: auto;
     height: 58px;
@@ -21,6 +23,7 @@
       height: 100%;
     }
   }
+/* HEADER > SEARCH-FORM */
   .search-form {
     height: 111px;
     justify-content: center;
@@ -47,6 +50,7 @@
   .main-case {
     max-width: none;
   }
+/* MAIN > BENEFITS */
   .benefits{
     max-width: none;
   }
@@ -66,21 +70,49 @@
   }
 }
 
-@media (min-width: 991.98px) {
-
-}
-
-// SIZE FOR TABLETS
+/* SIZE FOR TABLETS */
 @media (max-width: 991.98px) {
+/* MAIN > DETAILS */
+  .details__about {
+    justify-content: space-between;
+  }
+/* MIAN > VISIT */
+  .table {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 75px 0;
+    &__item {
+      width: 75%;
+      display: grid;
+      &:nth-child(even) {
+        justify-items: flex-end;
 
+      }
+    }
+  }
 }
 
-// SIZE FOR MEDIUM PHONE
+/* INTERMEDIATE CORRECTION POINT */
+@media (max-width: 879.98px) {
+  body {
+    font-size: 14px;
+    .header, .footer {
+      font-size: 16px;
+    }
+  }
+
+/* MAIN > DETAILS */
+  .details {
+    gap: 30px;
+  }
+}
+
+/* SIZE FOR MEDIUM PHONE */
 @media (max-width: 767.98px) {
 
 }
 
-// SIZE FOR SMALL PHONE
+/* SIZE FOR SMALL PHONE */
 @media (max-width: 575.98px) {
 
 }
