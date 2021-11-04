@@ -14,7 +14,6 @@ body {
 .header {
   width: 100%;
   height: 100vh;
-  display: block;
   padding-bottom: 200px;
   position: relative;
   overflow: auto;
@@ -38,6 +37,7 @@ body {
     padding: 0 50px 0;
     display: flex;
     flex-flow: column wrap;
+    justify-content: space-between;
     position: relative;
     z-index: 1;
   }
@@ -57,11 +57,11 @@ body {
   }
 }
 
-/* HEADER > MENU > LOGO */
+/* MENU > LOGO */
 .logo {
   position: relative;
 
-// EFFECT:
+// EFFECTS:
   &::before {
     content: "";
     height: 0;
@@ -98,7 +98,7 @@ body {
   }
 }
 
-/* HEADER > MENU > NAV-BAR */
+/* MENU > NAV-BAR */
 .nav-bar {
   width: 100%;
   max-width: 490px;
@@ -106,7 +106,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-// EFFECT:
+// EFFECTS:
   &__link {
     position: relative;
     cursor: pointer;
@@ -146,7 +146,6 @@ body {
 /* HEADER > ABOUT-US */
 .about-us {
   max-width: 620px;
-  height: 60%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -173,6 +172,8 @@ body {
   display: flex;
   align-items: center;
   margin: 50px 0 50px;
+
+// EFFECTS:
   &__item {
     width: 100%;
     max-width: 298px;
@@ -374,6 +375,7 @@ body {
   position: absolute;
   top: -200px;
   left: 50%;
+  z-index: 2;
   transform: translateX(-50%);
   box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
   background: #FFFFFF;
@@ -396,7 +398,7 @@ body {
   }
 }
 
-/* MAIN > BENEFITS > ARTICLES */
+/* BENEFITS > ARTICLES */
 .articles {
   width: 100%;
   margin-bottom: 90px;
@@ -453,7 +455,7 @@ body {
   }
 }
 
-/* MAIN > PLACES > ITEM-CASE */
+/* PLACES > ITEM-CASE */
 .gallery {
   width: 100%;
   display: grid;
@@ -580,7 +582,7 @@ body {
   }
 }
 
-/* MIAN > VISIT > TABLE */
+/* VISIT > TABLE */
 .table {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -617,7 +619,7 @@ body {
   }
 }
 
-/* MIAN > VISIT > TABLE > TABLE-CARD */
+/* VISIT > TABLE > TABLE-CARD */
 .table-card {
   display: block;
   width: 100%;

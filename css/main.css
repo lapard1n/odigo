@@ -28,7 +28,6 @@ body {
 .header {
   width: 100%;
   height: 100vh;
-  display: block;
   padding-bottom: 200px;
   position: relative;
   overflow: auto;
@@ -55,6 +54,7 @@ body {
   padding: 0 50px 0;
   display: flex;
   flex-flow: column wrap;
+  justify-content: space-between;
   position: relative;
   z-index: 1;
 }
@@ -71,7 +71,7 @@ body {
   font-size: 18px;
 }
 
-/* HEADER > MENU > LOGO */
+/* MENU > LOGO */
 .logo {
   position: relative;
 }
@@ -114,7 +114,7 @@ body {
   left: -15px;
 }
 
-/* HEADER > MENU > NAV-BAR */
+/* MENU > NAV-BAR */
 .nav-bar {
   width: 100%;
   max-width: 490px;
@@ -165,7 +165,6 @@ body {
 /* HEADER > ABOUT-US */
 .about-us {
   max-width: 620px;
-  height: 60%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -396,6 +395,7 @@ body {
   position: absolute;
   top: -200px;
   left: 50%;
+  z-index: 2;
   transform: translateX(-50%);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
   background: #FFFFFF;
@@ -418,7 +418,7 @@ body {
   color: #102746;
 }
 
-/* MAIN > BENEFITS > ARTICLES */
+/* BENEFITS > ARTICLES */
 .articles {
   width: 100%;
   margin-bottom: 90px;
@@ -479,7 +479,7 @@ body {
   width: 148px;
 }
 
-/* MAIN > PLACES > ITEM-CASE */
+/* PLACES > ITEM-CASE */
 .gallery {
   width: 100%;
   display: grid;
@@ -615,7 +615,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* MIAN > VISIT > TABLE */
+/* VISIT > TABLE */
 .table {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -651,7 +651,7 @@ body {
   transition: all 0.1s linear;
 }
 
-/* MIAN > VISIT > TABLE > TABLE-CARD */
+/* VISIT > TABLE > TABLE-CARD */
 .table-card {
   display: block;
   width: 100%;
@@ -823,14 +823,19 @@ body {
   .menu {
     flex-flow: column nowrap;
   }
-  .menu .logo {
+  .menu .header-logo {
     margin-bottom: 25px;
   }
   .menu .nav-bar {
     max-width: 60%;
   }
-  .about-us {
-    height: 55%;
+  .header-logo, .footer-logo {
+    width: auto;
+    height: 58px;
+  }
+  .header-logo .logo__img, .footer-logo .logo__img {
+    width: 100%;
+    height: 100%;
   }
   .search-form {
     height: 111px;
@@ -863,6 +868,15 @@ body {
   /* FOOTER */
   .footer-case {
     max-width: none;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+  .footer-logo {
+    margin-bottom: 50px;
+    order: 1;
+  }
+  .footer-list {
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
