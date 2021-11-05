@@ -17,7 +17,7 @@
 }
 
 /* BODY CONFIGS */
-body {
+html, body {
   background: #FFFFFF;
   font-family: "Lato";
   font-weight: 400;
@@ -80,7 +80,6 @@ body {
   content: "";
   height: 0;
   width: 4px;
-  background: #FFFFFF;
   display: block;
   position: absolute;
   top: 50%;
@@ -88,13 +87,13 @@ body {
   transform: translateY(-50%) skew(-30deg);
   box-shadow: -3px 0 7px rgba(0, 0, 0, 0.5);
   transition: all 0.15s ease-in;
+  background: #FFFFFF;
 }
 
 .logo::after {
   content: "";
   height: 0;
   width: 4px;
-  background: #FFFFFF;
   display: block;
   position: absolute;
   top: 50%;
@@ -102,6 +101,7 @@ body {
   transform: translateY(-50%) skew(-30deg);
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.5);
   transition: all 0.15s ease-in;
+  background: #FFFFFF;
 }
 
 .logo:hover::after {
@@ -132,26 +132,26 @@ body {
   content: "";
   height: 1px;
   width: 0;
-  background: #FFFFFF;
   display: block;
   position: absolute;
   bottom: -7px;
   right: -7px;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
   transition: all 0.1s ease-in;
+  background: #FFFFFF;
 }
 
 .nav-bar__link::after {
   content: "";
   height: 0;
   width: 1px;
-  background: #FFFFFF;
   display: block;
   position: absolute;
   bottom: -6px;
   right: -8px;
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.5);
   transition: all 0.1s ease-in;
+  background: #FFFFFF;
 }
 
 .nav-bar__link:hover::after {
@@ -186,9 +186,9 @@ body {
 /* HEADER > SEARCH-FORM */
 .search-form {
   width: 100%;
+  margin: 50px 0 50px;
   display: flex;
   align-items: center;
-  margin: 50px 0 50px;
 }
 
 .search-form__item {
@@ -215,10 +215,10 @@ body {
 .search-form__point {
   width: 20px;
   height: 20px;
+  margin-right: 22px;
   display: block;
   position: relative;
   z-index: 0;
-  margin-right: 22px;
   border-radius: 50%;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
@@ -233,11 +233,11 @@ body {
   top: 50%;
   left: 50%;
   z-index: 1;
-  background: #FFFFFF;
-  opacity: 0;
-  border-radius: 50%;
   transform: translate3d(-50%, -50%, 0);
   transition: all 0.2s ease-in;
+  background: #FFFFFF;
+  border-radius: 50%;
+  opacity: 0;
 }
 
 .search-form__line {
@@ -267,9 +267,9 @@ body {
   bottom: -15px;
   left: 50%;
   transform: translate(-50%);
-  background: #FFFFFF;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  background: #FFFFFF;
 }
 
 /* GLOBAL MAIN SELECTORS */
@@ -352,9 +352,9 @@ body {
 }
 
 .main-title {
+  display: inline;
   position: relative;
   color: #102746;
-  display: inline;
   font-weight: 500;
   font-size: 2.1875em;
 }
@@ -386,8 +386,8 @@ body {
 /* MAIN > BENEFITS */
 .benefits {
   width: 100%;
-  max-width: 1060px;
   height: 550px;
+  max-width: 1060px;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -416,8 +416,8 @@ body {
   color: #102746;
 }
 
-/* BENEFITS > ARTICLES */
-.articles {
+/* BENEFITS > COLUMNS */
+.columns {
   width: 100%;
   margin-bottom: 90px;
   display: grid;
@@ -425,7 +425,7 @@ body {
   justify-content: space-between;
 }
 
-.articles__item {
+.columns__item {
   max-width: 250px;
   height: 250px;
   display: flex;
@@ -433,29 +433,29 @@ body {
   justify-content: space-between;
 }
 
-.articles__item:nth-child(2) {
+.columns__item:nth-child(2) {
   margin: 0 25px;
 }
 
-.articles__logo {
+.columns__logo {
   width: 50px;
   height: 50px;
 }
 
-.articles__title {
+.columns__title {
   font-weight: 500;
   font-size: 1.125em;
   color: #000000;
 }
 
-.articles__text {
+.columns__text {
   line-height: 1.5;
   font-weight: 400;
   font-size: 1em;
   color: #000000;
 }
 
-.articles__link {
+.columns__link {
   width: 178px;
 }
 
@@ -594,11 +594,11 @@ body {
   font-size: 1em;
 }
 
-.details__link.first {
+.details-link_first {
   width: 220px;
 }
 
-.details__link.second {
+.details-link_second {
   width: 255px;
 }
 
@@ -906,10 +906,10 @@ body {
 
 /* INTERMEDIATE CORRECTION POINT */
 @media (max-width: 879.98px) {
-  body {
+  html, body {
     font-size: 14px;
   }
-  body .header, body .footer {
+  html .header, html .footer, body .header, body .footer {
     font-size: 16px;
   }
   /* MAIN > DETAILS */

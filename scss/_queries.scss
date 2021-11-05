@@ -34,7 +34,7 @@
       &:nth-child(1) {
         margin-right: 12.5px;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-left: 12.5px;
       }
     }
@@ -94,7 +94,7 @@
 
 /* INTERMEDIATE CORRECTION POINT */
 @media (max-width: 879.98px) {
-  body {
+  html, body {
     font-size: 14px;
     .header, .footer {
       font-size: 16px;
