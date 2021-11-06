@@ -134,11 +134,40 @@ html, body {
       transition: all 0.1s ease-in;
       background: #FFFFFF;
     }
+    &:nth-child(4) {
+      &::before {
+        content: "";
+        height: 1px;
+        width: 0;
+        display: block;
+        position: absolute;
+        top: -7px;
+        left: -7px;
+        box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+        transition: all 0.1s ease-in;
+        background: #FFFFFF;
+      }
+      &::after {
+        content: "";
+        height: 0;
+        width: 1px;
+        display: block;
+        position: absolute;
+        top: -6px;
+        left: -8px;
+        box-shadow: 3px 0 7px rgba(0,0,0,0.5);
+        transition: all 0.1s ease-in;
+        background: #FFFFFF;
+      }
+      &:hover::after {
+        height: 140%;
+      }
+    }
     &:hover::after {
       height: 125%;
     }
     &:hover::before {
-      width: 125%;
+      width: 120%;
     }
   }
 }
@@ -243,7 +272,7 @@ html, body {
     width: 0;
     height: 2px;
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
     left: 50%;
     transform: translate(-50%);
     transition: all 0.2s ease-in;
@@ -253,6 +282,15 @@ html, body {
 }
 
 /* GLOBAL MAIN SELECTORS */
+.anchor {
+  position: relative;
+  top: 75px;
+  visibility: hidden;
+  &:nth-child(3) {
+    top: 100px;
+  }
+}
+
 .main-btn {
   width: 172px;
   height: 58px;
