@@ -526,6 +526,8 @@ html, body {
 }
 
 .gallery__item {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
@@ -610,8 +612,11 @@ html, body {
 }
 
 .details__img {
-  width: 100%;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+
+.details__img img {
+  width: 100%;
 }
 
 .details__about {
@@ -669,7 +674,7 @@ html, body {
 }
 
 .table__item-txt {
-  margin: 30px 0 30px;
+  margin: 30px 0;
   line-height: 1.5;
   color: #102746;
   font-weight: 400;
@@ -950,8 +955,11 @@ html, body {
   html .header, html .hover-link, html .footer, body .header, body .hover-link, body .footer {
     font-size: 16px;
   }
-  html .columns, html .details, html .gallery, html .props, body .columns, body .details, body .gallery, body .props {
+  html .columns, html .details, html .props, body .columns, body .details, body .props {
     font-size: 14px;
+  }
+  html .gallery, body .gallery {
+    font-size: 12px;
   }
   /* MAIN > DETAILS */
   .details {
@@ -1035,31 +1043,45 @@ html, body {
   .columns__item:nth-child(2) {
     grid-area: 1/2/3/3;
   }
-  /* PLACES > ITEM-CASE */
+  /* MAIN > PLACES */
+  .main-title {
+    width: 50%;
+  }
+  /* MAIN > PLACES > ITEM-CASE */
   .gallery {
-    font-size: 12px;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(6, auto);
-    gap: 25px;
+    grid-template: auto/repeat(4, auto);
+    gap: 75px 0;
   }
   .gallery__item {
-    width: 100%;
+    position: relative;
+    transition: all 0.2s ease-in;
   }
   .gallery__item:nth-child(1) {
-    grid-area: 1/1/3/2;
+    grid-area: 1/1/2/3;
+    z-index: 1;
   }
   .gallery__item:nth-child(2) {
-    grid-area: 2/2/4/3;
+    grid-area: 1/2/2/4;
+    z-index: 2;
+    top: 25px;
   }
   .gallery__item:nth-child(3) {
-    grid-area: 3/1/5/2;
+    grid-area: 1/3/2/5;
+    z-index: 3;
+    top: 50px;
   }
   .gallery__item:nth-child(4) {
-    grid-area: 4/2/6/3;
+    grid-area: 2/1/3/3;
+    z-index: 4;
   }
   .gallery__item:nth-child(5) {
-    grid-area: 5/1/7/2;
+    grid-area: 2/2/3/4;
+    z-index: 6;
+    top: 25px;
+  }
+  .gallery__item:hover, .gallery__item:active {
+    transform: scale(1.1);
+    z-index: 10;
   }
   /* MAIN > DETAILS */
   .details {
@@ -1072,8 +1094,13 @@ html, body {
 
 /* INTERMEDIATE CORRECTION POINT */
 @media (max-width: 671.98px) {
+  /* MAIN > VISIT > TABLE */
   .table {
     font-size: 14px;
+    gap: 30px;
+  }
+  .table__item-txt {
+    margin: 15px 0;
   }
   .table-card__name {
     font-size: 1em;
@@ -1084,7 +1111,72 @@ html, body {
   .table-card__case_in:nth-child(1) {
     margin-right: 10px;
   }
+  /* MAIN > DETAILS */
+  .details {
+    margin-top: 50px;
+    position: relative;
+    grid-template: repeat(2, auto)/auto;
+    gap: 25px 0;
+  }
+  .details__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .details__img:first-child {
+    grid-area: 1/1/2/2;
+  }
+  .details__img:last-child {
+    grid-area: 2/1/3/2;
+  }
+  .details__img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(0deg, #151824, rgba(255, 255, 255, 0));
+  }
+  .details__about {
+    width: auto;
+    height: auto;
+    padding: 30px;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  .details__about:first-child {
+    grid-area: 1/1/2/2;
+  }
+  .details__about:last-child {
+    grid-area: 2/1/3/2;
+  }
+  .details__title, .details__text {
+    color: #FFFFFF;
+  }
+  .details__title, .details .hover-link__title {
+    font-weight: 700;
+  }
 }
 
 /* SIZE FOR SMALL PHONE */
+@media (max-width: 575.98px) {
+  /* FONT SIZE SETTING */
+  html .header, html .hover-link, html .footer, body .header, body .hover-link, body .footer {
+    font-size: 16px;
+  }
+  html .columns, html .details, body .columns, body .details {
+    font-size: 14px;
+  }
+  html .props, body .props {
+    font-size: 12px;
+  }
+  html .gallery, body .gallery {
+    font-size: 10px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
