@@ -931,10 +931,10 @@ html, body {
   .menu {
     flex-flow: column nowrap;
   }
-  .menu .header-logo {
+  .header-logo {
     margin-bottom: 25px;
   }
-  .menu .nav-bar {
+  .nav-bar {
     max-width: 60%;
   }
   /* MENU > LOGO */
@@ -1056,29 +1056,29 @@ html, body {
     align-items: center;
     background: linear-gradient(180deg, #151824, rgba(21, 24, 36, 0));
   }
-  .menu .header-logo {
+  .header-logo {
     left: 50px;
     margin-bottom: 0;
     transition: opacity 0.3s linear;
   }
-  .menu .nav-bar {
+  .nav-bar {
     height: 50vh;
     max-width: none;
-    padding: 30px 50px;
+    padding: 30px 0;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     position: absolute;
-    top: -50vh;
+    top: -60vh;
     z-index: 1;
     transition: all 0.3s linear;
     background: linear-gradient(180deg, #151824, rgba(255, 255, 255, 0));
     font-size: 24px;
   }
-  .menu .nav-bar__link {
+  .nav-bar__link {
     margin: 10px 0;
   }
-  .menu .menu__btn, .menu #menu__toggle {
+  .menu__btn, #menu__toggle {
     display: block;
   }
   /* HEADER > ABOUT-US */
@@ -1087,7 +1087,7 @@ html, body {
   }
   /* HEADER > SEARCH-FORM */
   .search-form {
-    height: 150px;
+    height: 175px;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1109,7 +1109,7 @@ html, body {
     top: -100px;
   }
   .anchor#visit {
-    top: -0px;
+    top: -50px;
   }
   .anchor#props {
     top: 0px;
@@ -1138,12 +1138,19 @@ html, body {
   .columns__item {
     max-width: none;
     max-height: 210px;
+    position: relative;
   }
   .columns__item:nth-child(1), .columns__item:nth-child(2), .columns__item:nth-child(3) {
     margin: 0;
   }
   .columns__item:nth-child(2) {
     grid-area: 1/2/3/3;
+  }
+  .columns__title {
+    position: absolute;
+    top: 25px;
+    left: 75px;
+    transform: translateY(-50%);
   }
   /* MAIN > PLACES */
   .main-title {
@@ -1190,7 +1197,7 @@ html, body {
     align-items: center;
   }
   .details__text {
-    margin: 15px 0;
+    margin: 30px 0;
   }
 }
 
@@ -1278,7 +1285,124 @@ html, body {
     font-size: 12px;
   }
   html .gallery, body .gallery {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  /* HEADER */
+  .header-case {
+    padding: 0 25px 0;
+  }
+  .header-logo {
+    left: 25px;
+  }
+  .menu__btn {
+    right: 25px;
+  }
+  /* MAIN */
+  .main-case {
+    padding: 0 25px 0;
+  }
+  /* MAIN > BENEFITS */
+  .benefits-case {
+    margin: 0 25px;
+  }
+  .columns__text::first-letter {
+    margin-left: 15px;
+  }
+  /* BENEFITS > COLUMNS */
+  .columns {
+    grid-template-columns: repeat(1, auto);
+    gap: 0;
+  }
+  .columns__item {
+    height: auto;
+    max-height: none;
+    justify-content: flex-start;
+  }
+  .columns__item:nth-child(1), .columns__item:nth-child(2), .columns__item:nth-child(3) {
+    grid-area: auto;
+  }
+  .columns__item:nth-child(2) {
+    margin: 30px 0;
+  }
+  .columns__text {
+    margin: 15px 0;
+  }
+  /* MAIN > PLACES > ITEM-CASE */
+  .gallery {
+    grid-template: repeat(8, auto)/auto;
+    gap: 0;
+  }
+  .gallery__item {
+    height: auto;
+    width: 70%;
+    min-width: 280px;
+    position: relative;
+    box-shadow: none;
+    transition: all 0.2s ease-in;
+    border: 4px solid #FFFFFF;
+  }
+  .gallery__item:nth-child(even) {
+    justify-self: flex-end;
+  }
+  .gallery__item:nth-child(1) {
+    grid-area: 1/1/5/2;
+    z-index: 1;
+    top: 0;
+  }
+  .gallery__item:nth-child(2) {
+    grid-area: 2/1/6/2;
+    z-index: 1;
+    top: 0;
+  }
+  .gallery__item:nth-child(3) {
+    grid-area: 3/1/7/2;
+    z-index: 1;
+    top: 0;
+  }
+  .gallery__item:nth-child(4) {
+    grid-area: 4/1/8/2;
+    z-index: 1;
+    top: 0;
+  }
+  .gallery__item:nth-child(5) {
+    grid-area: 5/1/9/2;
+    z-index: 1;
+    top: 0;
+  }
+  .gallery__item:hover, .gallery__item:active {
+    transform: scale(1.1);
+    z-index: 6;
+  }
+  .gallery__name {
+    top: 5%;
+    left: 5%;
+  }
+  .gallery__name.even {
+    left: auto;
+    right: 5%;
+  }
+  .gallery__name::after {
+    top: 25px;
+  }
+  /* MAIN > DETAILS */
+  .details {
+    position: relative;
+    width: calc(100% + 50px);
+    left: -25px;
+  }
+  /* MAIN > VISIT > TABLE */
+  .table {
+    gap: 25px;
+  }
+  /* FOOTER */
+  .footer-case {
+    padding: 25px 25px;
+  }
+  .footer-logo {
+    margin-bottom: 25px;
+  }
+  .footer-list {
+    margin: 25px 0 25px;
   }
 }
 /*# sourceMappingURL=main.css.map */
