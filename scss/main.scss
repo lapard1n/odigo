@@ -85,7 +85,7 @@ html, body {
   }
 }
 
-/* MENU > LOGO */
+/* HEADER > MENU > LOGO */
 .logo {
   position: relative;
   &::before {
@@ -124,7 +124,7 @@ html, body {
   }
 }
 
-/* INPUT SETTINGS*/
+/* INPUT SETTINGS */
 #menu__toggle {
   display: none;
   visibility: hidden;
@@ -183,7 +183,7 @@ html, body {
   }
 }
 
-/* MENU > NAV-BAR */
+/* HEADER > MENU > NAV-BAR */
 .nav-bar {
   width: 100%;
   max-width: 490px;
@@ -482,7 +482,7 @@ html, body {
   }
 }
 
-/* BENEFITS > COLUMNS */
+/* MIAN > BENEFITS > COLUMNS */
 .columns {
   width: 100%;
   margin-bottom: 90px;
@@ -539,7 +539,7 @@ html, body {
   }
 }
 
-/* PLACES > ITEM-CASE */
+/* MIAN > PLACES > ITEM-CASE */
 .gallery {
   width: 100%;
   display: grid;
@@ -624,9 +624,21 @@ html, body {
   grid-template-columns: repeat(2, 1fr);
   gap: 70px;
   &__img {
+    width: 100%;
+    max-height: 354px;
+    height: 30vw;
     box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
-    img {
+    .img {
       width: 100%;
+      height: 100%;
+    }
+    &:nth-child(1) .img {
+      background: url(../img/places/temple.jpg) center no-repeat;
+      background-size: cover;
+    }
+    &:nth-child(4) .img {
+      background: url(../img/places/stairs.jpg) center no-repeat;
+      background-size: cover;
     }
   }
   &__about {
@@ -668,7 +680,7 @@ html, body {
   }
 }
 
-/* VISIT > TABLE */
+/* MIAN > VISIT > TABLE */
 .table {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -705,7 +717,7 @@ html, body {
   }
 }
 
-/* VISIT > TABLE > TABLE-CARD */
+/* MIAN > VISIT > TABLE > TABLE-CARD */
 .table-card {
   display: block;
   width: 100%;
@@ -750,6 +762,7 @@ html, body {
 /* MAIN > PROPS */
 .props {
 width: 100%;
+height: calc(0.6*100vh);
 display: block;
 position: relative;
 margin-top: 100px;
@@ -766,7 +779,10 @@ margin-top: 100px;
     opacity: 40%;
   }
   .props__img {
+    height: 100%;
     width: 100%;
+    background: url(../img/main/bgFooter.jpg) center no-repeat;
+    background-size: cover;
   }
   .props__btn {
     position: absolute;
@@ -792,7 +808,7 @@ margin-top: 100px;
 /* FOOTER */
 .footer {
   width: 100%;
-  height: 370px;
+  height: calc(0.4*100vh);
   background: #0E1D28;
   &-case {
     max-width: 1060px;
@@ -826,7 +842,6 @@ margin-top: 100px;
   &__column {
     display: flex;
     flex-flow: column wrap;
-
   }
   &__link {
     position: relative;
