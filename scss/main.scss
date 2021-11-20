@@ -9,7 +9,6 @@ html, body {
     size: 16px;
   }
 }
-
 /* HEADER */
 .header {
   width: 100%;
@@ -305,6 +304,42 @@ html, body {
     background: none;
     border: none;
     color: rgba(255,255,255, 1);
+    &::-webkit-input-placeholder {
+      color: #FFFFFF;
+      -webkit-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+      font: {
+        weight: 500;
+        size: 1.125em;
+      }
+    }
+    &::-moz-placeholder {
+      color: #FFFFFF;
+      -moz-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+      font: {
+        weight: 500;
+        size: 1.125em;
+      }
+    }
+    &:-ms-input-placeholder {
+      color: #FFFFFF;
+      -ms-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+      font: {
+        weight: 500;
+        size: 1.125em;
+      }
+    }
+    &::-ms-input-placeholder {
+      color: #FFFFFF;
+      -ms-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+      font: {
+        weight: 500;
+        size: 1.125em;
+      }
+    }
     &::placeholder {
       color: #FFFFFF;
       transition: all 0.2s ease-in;
@@ -312,6 +347,18 @@ html, body {
         weight: 500;
         size: 1.125em;
       }
+    }
+    &:focus::-webkit-input-placeholder {
+      color: rgba(255,255,255, 0.5);
+    }
+    &:focus::-moz-placeholder {
+      color: rgba(255,255,255, 0.5);
+    }
+    &:focus:-ms-input-placeholder {
+      color: rgba(255,255,255, 0.5);
+    }
+    &:focus::-ms-input-placeholder {
+      color: rgba(255,255,255, 0.5);
     }
     &:focus::placeholder {
       color: rgba(255,255,255, 0.5);
