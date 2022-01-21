@@ -1,2 +1,7 @@
+# FILES:
 *.config
 *.map
+
+# DIRECTORIES:
+.idea
+lastVersion

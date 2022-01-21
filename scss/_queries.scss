@@ -2,7 +2,7 @@
 @media (max-width: 1099.98px) {
 /* HEADER */
   .header {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     &-case {
       max-width: none;
     }
@@ -36,7 +36,7 @@
     align-items: flex-start;
     position: relative;
     &__item {
-      margin-right: 0px;
+      margin-right: 0;
       &:nth-child(1) {
         margin-right: 12.5px;
       }
@@ -55,7 +55,7 @@
 /* MAIN */
   .main-case {
     max-width: none;
-    padding: 0px 50px 0;
+    padding: 0 50px 0;
   }
 
 /* MAIN > BENEFITS */
@@ -113,7 +113,7 @@
     gap: 30px;
   }
 
-/* MIAN > VISIT */
+/* MAIN > VISIT */
   .table {
     font-size: 16px;
     grid-template-columns: repeat(2, 1fr);
@@ -193,7 +193,7 @@
         margin: 0 0 20px 0;
       }
       &:nth-child(2) {
-        margin-left: 0px;
+        margin-left: 0;
       }
     }
     &__hover {
@@ -541,14 +541,14 @@
     }
   }
 
-/* MIAN > VISIT */
+/* MAIN > VISIT */
 .visit__header {
   .main-title {
     display: block;
   }
 }
 
-/* MIAN > VISIT > TABLE */
+/* MAIN > VISIT > TABLE */
   .table {
     font-size: 16px
   }
